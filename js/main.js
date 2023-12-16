@@ -36,7 +36,7 @@ selectElm.addEventListener("change", (e) => {
 
 function getWeather(conuntryLonLat) {
   const product = "civillight";
-  const apiUrl = `http://www.7timer.info/bin/api.pl?${conuntryLonLat}&product=${product}&output=json`;
+  const apiUrl = `https://www.7timer.info/bin/api.pl?${conuntryLonLat}&product=${product}&output=json`;
 
   fetch(apiUrl)
     .then((response) => {
